@@ -34,7 +34,7 @@ namespace HelloWorld.Wcf.Dominio.Acciones
                         palabrasOracion[i] = Regex.Replace(palabrasOracion[i], @"(?<!^)\w(?!$)", "*");
                         break;
                     }
-            return string.Join(" ", palabrasOracion);
+            return string.Join("", palabrasOracion);
         }
         string BuildMessage(string message, string name)
         {
